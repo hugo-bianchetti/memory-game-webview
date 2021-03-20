@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>MemoryGame</title>
+    <link rel="stylesheet" href="file:///android_asset/records.css">
+</head>
+
+<body>
+    <header>
+        <table>
+            <tr>
+                <th id='time'>Por tempo</th>
+                <th id='error'>Por error</th>
+            </tr>
+        </table>
+    </header>
+    <table id='content_time'>
+        <tr>
+            <th></th>
+            <th>Nome</th>
+            <th>Menor tempo</th>
+        </tr>
+    </table>
+    <table id='content_error'>
+        <tr>
+            <th></th>
+            <th>Nome</th>
+            <th>Erros</th>
+        </tr>
+    </table>
+    <button id='btn_clear' onclick="clearTable()">Limpar</button>
+    <script type="text/javascript" src="file:///android_asset/records.js"></script>
+</body>
+
+</html>

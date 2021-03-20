@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <title>MemoryGame</title>
+    <link rel="stylesheet" href="file:///android_asset/global.css">
+</head>
+
+<body>
+    <div id="game_info">
+        <div>
+            <strong>Erros</strong>
+            <p id="error_counter">0</p>
+        </div>
+        <button id="reset_button" onclick="reset()">Reiniciar</button>
+        <div>
+            <strong>Tempo</strong>
+            <p id="time">00:00</p>
+        </div>
+    </div>
+    <div id="game_container">
+        <table id="card_container">
+            <tr>
+                <td><button class="card" id="card01">  1 </button></td>
+                <td><button class="card" id="card02">  2 </button></td>
+            </tr>
+            <tr>
+                <td><button class="card" id="card03">  3 </button></td>
+                <td><button class="card" id="card04">  4 </button></td>
+            </tr>
+            <tr>
+                <td><button class="card" id="card05">  5 </button></td>
+                <td><button class="card" id="card06">  6 </button></td>
+            </tr>
+        </table>
+    </div>
+    <div id="game_progress">
+        <strong>Progresso</strong>
+        <progress id="progress" value="0" max="6"></progress>
+    </div>
+    <div id='result_container'>
+        <h1>Parabéns!</h1>
+        <h2>Você tem uma boa memória...</h2>
+        <input placeholder="Nome do jogador" id='user_name_input'></input><button onclick="saveRecords()">Salvar</button>
+    </div>
+
+    <script type="text/javascript" src="file:///android_asset/script.js"></script>
+</body>
+
+</html>

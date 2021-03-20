@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    height: 40px;
+    width: 130px;
+    font-weight: bold;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#card01 {background-color: red;}
+#card02 {background-color: blue;}
+#card03 {background-color: orange;}
+#card04 {background-color: green;}
+#card05 {background-color: purple;}
+#card06 {background-color: slateblue;}
+
+.card {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 15vh;
+    border: none;
+
+    transition: transform .1s ease-in-out;
+}
+
+#card_container {
+    margin: 10px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100vw;
+    border-spacing: 15px;
+}
+
+#game_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+
+}
+
+#game_progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+progress::-webkit-progress-value { background: black!important; }
+progress::-moz-progress-bar { background: black!important; }
+#game_progress > progress {
+    color: black!important;
+    width: 100%;
+    height: 30px;
+}
+
+
+
+#result_container {
+    display: none;
+    margin: 10vh auto;
+    text-align: center;
+}
+
+#result_container input {
+    margin-top: 20px;
+    height: 30px;
+}
+
+#result_container button {
+    height: 34px;
+}
